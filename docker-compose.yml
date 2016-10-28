@@ -1,0 +1,7 @@
+version: "2"
+services:
+  site-nginx:
+    build: .
+    ports:
+      - "80:80"
+    command: [nginx, -g, 'daemon off;']
